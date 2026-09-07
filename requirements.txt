@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------------------
+# Enterprise Knowledge Assistant - core dependencies
+# Tested targets: Python 3.11 - 3.14 (see README "Python 3.14 note")
+# ---------------------------------------------------------------------------
+
+streamlit>=1.39
+langchain-core>=0.3,<0.4
+langchain-community>=0.3,<0.4
+langchain-openai>=0.2,<0.4
+langchain-text-splitters>=0.3,<0.4
+openai>=1.54
+rank-bm25>=0.2.2
+faiss-cpu>=1.8
+numpy>=2.1
+python-dotenv>=1.0
+pydantic>=2.9
+
+# --- Document loaders (optional but recommended) ---------------------------
+# pypdf is pure-Python. python-docx needs lxml (a C extension); if the wheel
+# does not build on your Python, the app still runs and simply skips .docx.
+pypdf>=5.1
+python-docx>=1.1

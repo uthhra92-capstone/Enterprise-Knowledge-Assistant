@@ -1,0 +1,22 @@
+# --- secrets & local config ---
+.env
+.streamlit/secrets.toml
+
+# --- generated index & chat history ---
+storage/
+
+# --- python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- os ---
+.DS_Store
+Thumbs.db
+
+# --- optional: don't publish the private corpus to a public repo ---
+# Uncomment the next two lines to keep documents OUT of git, then add
+# them at runtime via the app's "Documents" uploader.
+# data/documents/*
+# !data/documents/.gitkeep
