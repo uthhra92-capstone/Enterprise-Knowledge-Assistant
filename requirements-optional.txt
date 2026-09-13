@@ -1,7 +1,0 @@
-# Optional extras - install only if you want the matching feature.
-
-# Cohere reranker  (set RERANKER=cohere and COHERE_API_KEY in .env)
-cohere>=5.5
-
-# ChromaDB - alternative local vector store (see eka/vector_store.py to wire it in)
-# chromadb>=0.5

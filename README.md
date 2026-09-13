@@ -68,11 +68,10 @@ python -m venv .venv
 
 pip install -r requirements.txt
 
-Copy-Item .env.example .env
 notepad .env          # paste your OPENAI_API_KEY
 ```
 
-macOS / Linux: `python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && cp .env.example .env`
+macOS / Linux: `python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
 
 ## Run
 
@@ -128,7 +127,7 @@ or an external database.
 
 ## Configuration
 
-Everything is driven by `.env` (defaults in `.env.example`): models, chunk size,
+Everything is driven by `.env`: models, chunk size,
 the `TOP_K_*` retrieval widths, `RRF_K`, `RERANKER` (`llm` / `cohere` / `none`),
 `MEMORY_WINDOW`, and `SCORE_THRESHOLD` (the grounding gate — raise it to make the
 assistant more conservative about answering).
@@ -174,7 +173,7 @@ Capstone Project/
 ├─ ingest.py              # build/rebuild the index
 ├─ eval.py                # scripted demo (memory + hallucination probes)
 ├─ requirements.txt
-├─ .env.example
+├─ .env
 ├─ .python-version                 # pin for pyenv / Render (3.12)
 ├─ .streamlit/
 │  ├─ config.toml                  # theme

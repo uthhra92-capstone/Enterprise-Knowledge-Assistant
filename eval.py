@@ -14,14 +14,15 @@ from eka.config import settings
 from eka.memory import ConversationMemory
 from eka.pipeline import KnowledgeAssistant
 
-# Generic probes; the last two exercise memory and hallucination handling.
-# Adjust the wording to match whatever documents you have indexed.
+# Probes for the bundled Northwind Dynamics sample documents.
+# Q3 is a bare follow-up (memory), Q6 is not covered by any document (hallucination).
 CONVERSATION = [
-    "Give me a short summary of what these documents cover.",
-    "What does the disciplinary / misconduct policy say?",
-    "What are the possible outcomes or penalties?",   # follow-up: relies on memory
-    "What is the process for raising a complaint or grievance?",
-    "What is the company's policy on time travel to the year 3000?",  # not in docs
+    "What is the annual leave entitlement?",
+    "How does carry-forward work and by when must it be used?",
+    "What about the rules for sick leave?",              # follow-up: relies on memory
+    "What is the per diem for international business travel?",
+    "How much parental leave does a primary caregiver get?",
+    "What is the company's policy on cryptocurrency trading bonuses?",  # not in docs
 ]
 
 
